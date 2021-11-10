@@ -1,5 +1,27 @@
-<style>
-/* 1. Global overrides */
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Posture Perfect</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#db4938">
+        <!--add to view point for certain iphones-->
+        <!--, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0"-->
+        <link rel="stylesheet" href="concern-styles.css">  
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous"
+      /> 
+      <style>
+        /* 1. Global overrides */
 /* -- 1a. Fonts */
 /* -- 1b. Text settings */
 /* -- 1c. Containers */
@@ -23,107 +45,101 @@
 
 /* -- 1a. Fonts */
 /* start fonts */
-@font-face {
-  font-family: 'my_fontregular';
-  src: url('') format('woff2'),
-       url('') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+
+/* end fonts */
+
+
+/*Social Media*/
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@font-face {
-  font-family: "Trade Gothic";
-  src: url("")
-      format("woff2"),
-    url("")
-      format("woff"),
-    url("")
-      format("truetype");
-  font-weight: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Trade Gothic";
-  src: url("")
-      format("woff2"),
-    url("")
-      format("woff"),
-    url("")
-      format("truetype");
-  font-weight: bold;
-  font-display: swap;
+.nav-list li {
+  margin: 0 2rem;
 }
 
-.parent {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 40px;
-  grid-row-gap: px;
+.social-media {
+  margin-top: 5rem;
 }
-  
-.div1 { grid-area: 1 / 2 / 2 / 3; }
-.div2 { grid-area: 1 / 3 / 2 / 5; }
+
+.social-media i {
+  font-size: 5rem;
+  transition: color 650ms;
+  color: #a2d3de;
+}
+
+.fa-linkedin:hover {
+  color: #0072b1;
+}
+.fa-twitter-square:hover {
+  color: #38a1f3;
+}
+.fa-instagram:hover {
+  color: #fbad50;
+}
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+/*End Social Media*/
+/*Start Contact*/
+form label {
+  font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 5px;
+}
+
+
+/*End contact*/
+/*End Contact*/
 /* show & hide hero image for different queries */
 .hide-on-mobile {
   display: block;
 }
-
 .show-on-mobile {
   display: none;
 }
 
-.show-on-mobile-notify {
-  display: none;
-}
-
-/* .grecaptcha-badge { 
-  visibility: hidden;
-} */
 /* -- 1b. Text settings */
 /*start text global*/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  color: #0a281e;
 }
 
 section {
   padding: 60px 0 0;
-  color: #0a281e;
 }
-
-#Read, #Listen, #Shop, #Subscribe {
-  overflow-x: hidden;
-}
-
 section.landing {
   margin-top: 100px;
 }
 
 body {
-  font-family: "my_fontregular", sans-serif;
+  font-family: "Recoleta-Medium", sans-serif;
   font-weight: normal;
-  color: #0a281e;
-  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-  font-family: "my_fontregular", sans-serif;
+  font-family: "Recoleta-Medium", sans-serif;
   font-weight: 400;
-  font-size: 4.375em;
-  color: #0a281e;
-  -webkit-font-smoothing: antialiased;
+  font-size: 70px;
 }
-
 h2 {
-  /* font-size: 4.375em; */
-  font-size: 3.71875em;
+  font-size: 4.375em;
   margin-bottom: 60px;
-  color: #0a281e;
-  font-weight: 400;
+  color: #538c83;
 }
 
 ul {
@@ -134,22 +150,10 @@ ul {
 
 .heading-short-description {
   text-align: center;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   margin-bottom: 60px;
-  /* font-size: 1.5em; */
-  font-size: 1.25em;
-}
-
-textarea,
-input.text,
-input[type="text"],
-input[type="email"],
-input[type="button"],
-input[type="submit"],
-.input-checkbox {
--webkit-appearance: none;
-/* border-radius: 0; */
+  font-size: 1.5em;
 }
 
 /*end text global*/
@@ -161,23 +165,30 @@ input[type="submit"],
   margin: 0 auto;
   position: relative;
 }
-
 .fullwidth {
   width: 100%;
 }
-
 .align-center {
   text-align: center;
 }
 
+/* Rule a line after section*/
+/*section .container::after {
+content: " ";
+position: absolute;
+left: 0;
+bottom: -60px;
+width: 100%;
+height: 1px;
+background: #000;
+} */
 .container.rule {
   margin-top: 60px;
 }
-
 .container.rule span {
   width: 100%;
   height: 1px;
-  background-color: #455c54;
+  background-color: #975536;
   display: block;
 }
 
@@ -217,36 +228,17 @@ input[type="submit"],
 
 .column .content-column p {
   margin-bottom: 60px;
-  /* font-size: 1.5em; */
-  font-size: 1.25em;
+  font-size: 1.5em;
+  color:#975536;
 }
-
 .column .content-column:first-of-type {
   padding-right: 40px;
 }
-
 .column .content-column:last-of-type {
   padding-left: 40px;
 }
 /* end of flexbox */
 
-
-.image-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden!important;
-  height: calc(130vh - 100px);
-  object-fit: cover;
-  }
-    
-.image-bg  img{
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
-  }
-
-  
 /* -- 1e. Nav bar */
 /* start nav bar */
 
@@ -265,7 +257,6 @@ nav ul {
   width: 100%;
   background-color: white;
 }
-
 nav ul li {
   display: inline-block;
   text-align: center;
@@ -274,110 +265,53 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: #0a281e;
+  color: #538c83;
   text-align: center;
   text-transform: capitalize;
-  /* font-size: 2.25em; */
-  font-size: 1.9125em;
-  font-family: "my_fontregular", sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-size: 2.25em;
+  font-family: "Recoleta-Medium", sans-serif;
   font-weight: normal;
   letter-spacing: 0px;
 }
 
 nav a:hover {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
 }
-
-a.active{
-  text-decoration: underline !important; 
-  text-decoration-thickness: 2px;
-}
-
 /* end nav bar */
 
-.the-yoga-logo {
+.the-dose-logo {
   max-width: 885px;
 }
 
 /* -- 1f. Buttons, CTA interactive elements */
 /*  global button */
 .myButton {
-  background-color: #0a281e;
-  border-radius: 35px;
-  border: 1px solid #0a281e;
+  background-color: #a2d3de;
+  /* border-radius: 35px; */
+  border: 1px solid #a2d3de;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  /* font-size: 1.5625em; */
-  font-size: 1.33em;
+  font-size: 25px;
   padding: 18px;
   min-width: 320px;
   box-sizing: border-box;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
+  text-shadow: 0px 1px 0px #a2d3de;
   text-transform: capitalize;
-  font-family: "my_fontregular", sans-serif;
-  -webkit-font-smoothing: antialiased;
+  /* font-family: "Recoleta-Medium", sans-serif; */
   transition: 0.3s;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .myButton:hover {
   background-color: #ffffff;
-  color: #0a281e;
+  color: #975536;
 }
-
 .myButton:focus {
   outline: none;
 }
-
 .myButton:active {
-  position: relative;
-  top: 1px;
-}
-/* end global button */
-
-
-/*  global button */
-.notify-btn {
-  background-color: #0a281e;
-  border-radius: 35px;
-  border: 1px solid #0a281e;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  /* font-size: 1.5625em; */
-  font-size: 1.33em;
-  padding: 18px;
-  width: 50%;
-  box-sizing: border-box;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
-  text-transform: capitalize;
-  font-family: "my_fontregular", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  transition: 0.3s;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.notify-btn:hover {
-  background-color: #ffffff;
-  color: #0a281e;
-}
-
-.notify-btn:focus {
-  outline: none;
-}
-
-.notify-btn:active {
   position: relative;
   top: 1px;
 }
@@ -386,18 +320,17 @@ a.active{
 /* -- 1g. Slides */
 /*start of slides*/
 .slider-item h3 {
-  font-size: 2.5em;
-  font-family: "my_fontregular", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #0a281e;
+  font-size: 40px;
+  font-family: "Recoleta-Medium", sans-serif;
+  color: #975536;
   padding-top: 40px;
   padding-bottom: 10px;
 }
 
 .subheading {
   font-family: "Trade Gothic", sans-serif;
-  font-size: 1em;
-  color: #0a281e;
+  font-size: 16px;
+  color: #975536;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -405,9 +338,12 @@ a.active{
 .slider-short-description {
   padding: 20px;
   font-size: 1.5em;
+  color: #975536;
 }
 
 /*end of slides*/
+
+
 
 /*start of next buttons for carousel*/
 .owl-prev,
@@ -440,64 +376,48 @@ a.active{
 /*end of next buttons for carousel*/
 
 /* -- 1h .Form */
-.form-response {
-  margin-bottom: 35px;
-  font-size: 1.5em;
-}
-
 /* start form */
 form fieldset {
   border: none;
 }
-
 form .form-input {
   margin-bottom: 60px;
 }
-
 form .form-input input {
   height: 60px;
   width: calc(45% - 0px);
   border: none;
   border-bottom: 1px solid #0a281e;
   position: relative;
-  font-size: 1.5625em;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  font-size: 25px;
 }
-
 form .form-input input:focus {
   outline: none;
 }
-
 form .form-input input[type="text"] {
   float: left;
 }
-
 form .form-input input[type="email"] {
   float: right;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #0a281e;
-  font-family: "my_fontregular", sans-serif;
-  -webkit-font-smoothing: antialiased;
+  color: #975536;
+  font-family: "Recoleta-Medium", sans-serif;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  font-family: "my_fontregular", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #0a281e;
+  font-family: "Recoleta-Medium", sans-serif;
+  color: #975536;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  font-family: "my_fontregular", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #0a281e;
+  font-family: "Recoleta-Medium", sans-serif;
+  color: #975536;
 }
 
 /* end form */
@@ -505,103 +425,48 @@ form .form-input input[type="email"] {
 /* -- 2b. ` */
 /* start landing page */
 
-
 .landing p {
   text-transform: uppercase;
   letter-spacing: 4px;
   line-height: 1.5em;
   text-align: center;
-  font-family: "Trade Gothic", sans-serif;
   font-weight: bold;
   margin-top: -12px;
-  font-size: 1em;
-  font-size: 0.85em;
-}
-
-.fix-margin{
-  margin-top: 30px;
+  color: #975536;
 }
 
 .podcast-available {
-  margin-bottom: 38px !important;
+  margin-bottom: 20px;
 }
 
 .landing .goodleaf-logo-img {
-  margin: 30px 0 20px 0;
-  max-width: 150px;
+  margin: 30px 0 60px 0;
+  width: 450px;
 }
-
 .landing .hero {
   margin-top: 70px;
 }
 
-.podcast-column {
- margin-bottom: 60px;
-}
 .podcast-available span {
   text-transform: uppercase;
   font-family: "Trade Gothic", sans-serif;
   letter-spacing: 4px;
-  font-size: 0.75em;
-  font-weight: bold;
-}
-
-.platforms ul {
-  text-align: left;
-}
-
-.platforms li {
-/* font-size: 1.5em; */
-  font-size: 1.25em;
-}
-
-.platforms li a {
-  text-decoration: none;
-  }
-
-.marquee {
-  position: relative;
-  overflow: hidden;
-  --offset: 20vw;
-  --move-initial: calc(-25% + var(--offset));
-  --move-final: calc(-50% + var(--offset));
-}
-
-.marquee__inner {
-  position: relative;
-  transform: translate3d(var(--move-initial), 0, 0);
-  animation: marquee 5s linear infinite;
-  animation-play-state: running;
-  white-space: nowrap;
-}
-
-.marquee span {
-  font-size: 2.5em;
-  padding: 0 20px;
-  color: #ffffff;
-}
-
-.marquee__inner {
-  animation-play-state: running;
-}
-
-@keyframes marquee {
-  0% {
-      transform: translate3d(var(--move-initial), 0, 0);
-  }
-
-  100% {
-      transform: translate3d(var(--move-final), 0, 0);
-  }
-}  
-
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  top: 70%;
-  width: 100%;
 }
 /* end landing page  */
+
+/* -- 2c. explore */
+/* start explore page */
+.explore-subheading{
+  font-size: 40px;
+  color: #538c83;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.explore-content {
+  margin: 80px 40px 60px;
+}
+/* end explore page  */
 
 /* -- 2g. shop */
 /* start shop page */
@@ -612,13 +477,11 @@ form .form-input input[type="email"] {
 }
 
 .purchase-1 {
-  margin-left: 120px;
-  }
-  
+margin-left: 120px;
+}
 .purchase-2 {
-  margin-right: 120px; 
-  }
-
+margin-right: 120px; 
+}
 /* end shop page  */
 
 /* -- 2h. footer */
@@ -637,8 +500,6 @@ footer ul li a {
   letter-spacing: 4.5px;
   text-transform: uppercase;
   font-weight: 600;
-  /* font-size: 1em; */
-  font-size: 0.85em;
 }
 
 footer a:hover {
@@ -647,32 +508,22 @@ footer a:hover {
 
 footer ul li .footer-img {
   padding: 60px;
-  max-width: 460px;
 }
 
 /* end footer */
 
-
-
 /* Mobile Responsive */
-@media only screen and (min-width: 200px) and (max-width: 1023px) {
-  
+@media only screen and (min-width: 200px) and (max-width: 767px) {
   /* -- 2a. header */
   /* show & hide hero image for different queries */
   .hide-on-mobile {
     display: none;
   }
-
   .show-on-mobile {
     display: block;
   }
-
-  .show-on-mobile-notify {
-    display: inline-block;
-    width: 100%;
-  }
-
-  /* -- start nav */  
+/* -- 1e. Nav bar */
+/* start nav bar */
   nav ul li {
     margin-right: 25px;
   }
@@ -700,11 +551,10 @@ footer ul li .footer-img {
   header ul li {
     margin: 0 10px;
   }
-  /* -- end nav */  
+/* end nav bar */
 
 
-  /* -- 2b. landing */
-  /* start landing button */
+/* -- 2b. landing */
   section.landing {
     margin-top: 35px;
   }
@@ -724,92 +574,11 @@ footer ul li .footer-img {
     margin-top: 15px;
   }
 
-  .the-yoga-logo {
+  .the-dose-logo {
     max-width: 300px;
   }
-  /* end landing button */
 
-  /*  global button */
-  .notify-btn {
-    /* min-width: 280px; */
-    width: 100%;
-    margin-bottom: 35px;
-  }
-  /* start global button */
-  .mobileButton {
-    background-color: #0a281e;
-    border-radius: 35px;
-    border: 1px solid #0a281e;
-    /*display:inline-block;*/
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 1.5625em;
-    padding: 16px;
-    min-width: 280px;
-    box-sizing: border-box;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #2f6627;
-    text-transform: capitalize;
-    font-family: "my_fontregular", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    transition: 0.3s;
-    margin-bottom: 35px;
-    text-align: center;
-  }
-
-  .mobile:hover {
-    background-color: #ffffff;
-    color: #0a281e;
-  }
-
-  .mobile:focus {
-    outline: none;
-  }
-
-  .mobile:active {
-    position: relative;
-    top: 1px;
-  }
-
-  .swap-btn {
-    margin-top: 35px;
-  }
-  /* end global button */
-  
-  /* -- 2c. about */
-  /* -- start about */
-  .form-response {
-    font-size: 1em;
-  }
-
-  form .form-input {
-    margin-bottom: 35px;
-  }
-
-  form .form-input input[type="text"] {
-    clear: both;
-  }
-
-  form .form-input input[type="email"] {
-    clear: both;
-  }
-
-  form .form-input input {
-    width: calc(100% - 0px);
-    font-size: 1em;
-  }
-  /* --end about */
-
-
-  /* -- global  */
-  /* --  start global  */
-
-  /* -- start temporary fix for height of images on deskop  */  
-  .image-bg {
-    height: 100%;
-  }
-  /* -- end temporary fix for height of images on deskop */  
+  /* -- start global */  
   body {
     padding: 0px 18px;
   }
@@ -824,29 +593,11 @@ footer ul li .footer-img {
   h2 {
     font-size: 2em;
     margin-bottom: 40px;
+    color: #538c83;
   }
 
-  .heading-short-description {
-    margin-bottom: 35px;
-    font-size: 1em;
-    padding: 0 18px;
-  }
-
-  .slider-container {
-    margin: 0 -18px 0px 15px;
-  }
-
-  .slider-item h3 {
-    font-size: 2em;
-  }
-
-  .subheading {
-    font-weight: 600;
-    font-size: 0.75em;
-  }
-
-  .slider-short-description {
-    font-size: 1em;
+  .swap-btn {
+    margin-top: 35px;
   }
 
   .row {
@@ -855,7 +606,6 @@ footer ul li .footer-img {
     flex-direction: unset;
     flex-wrap: unset;
   }
-
   .column {
     display: block;
     flex-direction: unset;
@@ -881,10 +631,92 @@ footer ul li .footer-img {
   .container.rule {
     margin-top: 30px;
   }
-  /* --  end global  */
+
+  .heading-short-description {
+    margin-bottom: 35px;
+    font-size: 1em;
+    padding: 0 18px;
+    color: #975536;
+  }
+
+  .slider-container {
+    /*margin: 0 15px; */
+    margin: 0 -18px 0px 15px;
+  }
+
+  .slider-item h3 {
+    font-size: 2em;
+  }
+
+  .subheading {
+    font-weight: 600;
+    font-size: 0.75em;
+  }
+
+  .slider-short-description {
+    font-size: 1em;
+  }
+
+  /* -- end global */  
+
+
+  /*  global button */
+  .mobileButton {
+    background-color: #a2d3de;
+    border-radius: 35px;
+    border: 1px solid #a2d3de;
+    /*display:inline-block;*/
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 25px;
+    padding: 16px;
+    min-width: 280px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    text-transform: capitalize;
+    font-family: "Recoleta-Medium", sans-serif;
+    transition: 0.3s;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .mobile:hover {
+    background-color: #ffffff;
+    color: #975536;
+  }
+  .mobile:focus {
+    outline: none;
+  }
+  .mobile:active {
+    position: relative;
+    top: 1px;
+  }
+  /* end global button */
+
+ 
+
+  /* -- 2c. about */
+  /* start about */
+  form .form-input {
+    margin-bottom: 35px;
+  }
+
+  form .form-input input[type="text"] {
+    clear: both;
+  }
+  form .form-input input[type="email"] {
+    clear: both;
+  }
+
+  form .form-input input {
+    width: calc(100% - 0px);
+    font-size: 1em;
+  }
+  /* end about */
 
   /* -- 2f. listen */
-  /* start listen */
+  /* start lsiten */
   .column-reverse {
     transform: scaleY(-1);
   }
@@ -916,7 +748,19 @@ footer ul li .footer-img {
   .shop .flex-container {
     flex-direction: column;
   }
-   /* end shop */
+
+  .explore .flex-container {
+    flex-direction: column;
+  }
+
+  .explore-content {
+    margin: 0px 18px 35px;
+}
+
+.explore-subheading {
+  font-size: 2em;
+}
+ /* end footer */
 
   /* -- 2h. footer */
   /* start footer */
@@ -927,13 +771,12 @@ footer ul li .footer-img {
 
   footer ul li a {
     font-size: 0.75em;
+    color: #975536;
   }
 }
-  /* end footer */
-
-/* Tablet Responsive */
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
-/* -- start nav */  
+/* end footer */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* start nav */
   nav ul li {
     margin: 0 28px;
   }
@@ -941,14 +784,13 @@ footer ul li .footer-img {
   nav a {
     font-size: 1.375em;
   }
+  /* end nav */
 
-  .the-yoga-logo {
+  /* start landing */
+  .the-dose-logo {
     max-width: 590px;
   }
-/* -- end nav */  
 
-/* -- 2b. landing */
-/* -- start landing */  
   .landing p {
     margin-top: 50px;
     font-size: 0.75em;
@@ -961,18 +803,9 @@ footer ul li .footer-img {
   .landing .hero {
     margin-top: 30px;
   }
-/* -- end landing */  
+  /* end landing */
 
-/* -- start global */  
-
-/* -- start temporary fix for height of images on deskop  */  
-  .image-bg {
-    height: 100%;
-  }
-/* -- end temporary fix for height of images on deskop */  
-  .row {
-    padding: 0px;
-  }
+  /* start global */
   body {
     padding: 0px 70px;
   }
@@ -986,16 +819,12 @@ footer ul li .footer-img {
     font-size: 0.75em;
   }
 
-  .form-response {
-    font-size: 0.75em;
-  }
-
   form .form-input input {
     font-size: 0.875em;
   }
 
   .myButton {
-    font-size: 1.5em;
+    font-size: 24px;
     padding: 16px;
     min-width: 310px;
   }
@@ -1027,10 +856,9 @@ footer ul li .footer-img {
   .column .content-column:last-of-type {
     padding-left: 0px;
   }
-/* -- end global */ 
+  /* end global */
 
-/* -- 2g. shop */
-/* -- start shop */  
+  /* start shop */
   .purchase-content {
     margin-right: 15px;
     margin-left: 15px;
@@ -1039,55 +867,44 @@ footer ul li .footer-img {
   .purchase-1 {
     margin-left: 80px;
     }
-
-  .purchase-2 {
+    .purchase-2 {
     margin-right: 80px; 
-   }
-
-/* -- end shop */  
-
-/* -- 2f. lsiten */
-/* -- start listen */  
-.platforms li {
-  font-size: 0.75em !important;
+    }
+  /* end shop */
 }
-/* -- end listen*/  
 
-/* -- start footer */  
-footer ul li a {
-  font-size: 0.75em;
-}
-/* -- end footer */ 
-}
-  
-</style>
-
-
+      </style> 
+  </head>
+<body>
 <!--------------------------------------------------------------------------------start nav bar-------------------------------------------------------------------------->
 <header class="sticky" id="no-padding-sticky">
   <div class="container align-center">
     <nav class="nav-bar" id="nav_bar">
       <ul class="nav-links">
-        <li><a href="#">In person</a></li>
-        <li><a href="#">Online</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Clothing</a></li>
-        <li><a href="#">Equipment</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#Read">In-Person</a></li>
+        <li><a href="#Listen">Online</a></li>
+        <li><a href="#Shop">Community</a></li>
+        <li><a href="#Subscribe">Clothing</a></li>
+        <li><a href="#Listen">Equipment</a></li>
+        <li><a href="#Shop">Contact Us</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <!--------------------------------------------------------------------------------end nav bar---------------------------------------------------------------------------->
+
 <!--------------------------------------------------------------------------------start landing-------------------------------------------------------------------------->
 
 <section class="landing"  id="top">
   <div class="container align-center">
-    <img src="../assets/thedose-logo.png" alt=""  class="the-yoga-logo fullwidth" />
+    <img src="https://nelisam.github.io/portfolio-nelisa/images/posture-perfect-logo.png" alt=""  class="goodleaf-logo-img fullwidth" />
     <p class="landing-text align-center">
-      Consectetur adipiscing elit<br class="hide-on-mobile"/> Ut a volutpat ligula
+        your self care station - for when you need serenity and<br class="hide-on-mobile"/> 
+        peace - an exploration<br class="hide-on-mobile"/> 
+        into selfcare - care and the moments<br class="hide-on-mobile"/> 
+        that make us human<br class="hide-on-mobile"/>  
     </p>
-    <img src="../assets/landing-unsplash.jpg" alt="" class="hero hide-on-mobile fullwidth" />
+    <img src="https://nelisam.github.io/portfolio-nelisa/images/first-scaled.jpg" alt="" class="hero hide-on-mobile fullwidth" />
     <img src="../assets/landing-mobile.png" alt="" class="hero show-on-mobile fullwidth" />
   </div>
   <div class="container rule">
@@ -1097,44 +914,44 @@ footer ul li a {
 
 
 <!--------------------------------------------------------------------------------end landing---------------------------------------------------------------------------->
+
 <!--------------------------------------------------------------------------------start about---------------------------------------------------------------------------->
 <section id="Read">
   <div class='flex-container'>
     <div class='row wrap-row'>
       <div class='column align-center'>
         <div class='content-column'>
-          <h2>Lorem ipsum dolor </br>sit amet</h2>
+          <h2>Join our  </br>Serenity Classes</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a volutpat ligula. Morbi et ligula sed quam congue fermentum vitae et orci. Aenean suscipit lacinia urna et convallis. Sed sit amet erat vitae nunc posuere iaculis in ut augue. Suspendisse blandit diam nec velit scelerisque sollicitudin. Maecenas semper porta lectus, fermentum dictum metus venenatis eget. Praesent iaculis, felis pretium egestas tristique, massa enim lacinia urna, vitae venenatis quam magna ac nibh. Suspendisse quis bibendum tortor. Vestibulum imperdiet mauris lacus, in semper mi tristique eu. Nam quis euismod mi. Nullam congue turpis id nisl efficitur, at eleifend arcu posuere. Quisque nec ultrices magna. Integer tempor lectus eget orci ornare gravida. Nunc a facilisis metus.
+            We’re a head-clearing swim before the world has awoken or a call from a friend on a lonely afternoon. 
+            We’re not just a blog but a trusted companion, on hand to make life’s in-between moments a little 
+            more meaningful. We’re about to kickstart the next leg of our journey and we’d love for you to join 
+            us when we’re live. Get the good news first by signing up to notifications below. 
           </p>
+          <a href="#" class="myButton mobileButton">In Person Classes</a><br/><br/>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a volutpat ligula. Morbi et ligula sed quam congue fermentum vitae et orci. Aenean suscipit lacinia urna et convallis. Sed sit amet erat vitae nunc posuere iaculis in ut augue. Suspendisse blandit diam nec velit scelerisque sollicitudin. Maecenas semper porta lectus, fermentum dictum metus venenatis eget. Praesent iaculis, felis pretium egestas tristique, massa enim lacinia urna, vitae venenatis quam magna ac nibh. Suspendisse quis bibendum tortor. Vestibulum imperdiet mauris lacus, in semper mi tristique eu. Nam quis euismod mi. Nullam congue turpis id nisl efficitur, at eleifend arcu posuere. Quisque nec ultrices magna. Integer tempor lectus eget orci ornare gravida. Nunc a facilisis metus.  
+            We’re a head-clearing swim before the world has awoken or a call from a friend on a lonely afternoon. 
+            We’re not just a blog but a trusted companion, on hand to make life’s in-between moments a little 
+            more meaningful. We’re about to kickstart the next leg of our journey and we’d love for you to join 
+            us when we’re live. Get the good news first by signing up to notifications below. 
           </p>
-          <div class="form-response"></div>
-          <form id="signUp" action="#" method="post"> 
-            <fieldset class="form-input" >
-              <input type="text" placeholder="First Name" name="first_name" required>
-              <input type="email" placeholder="Email" name="email" required>
-            </fieldset>
-            <fieldset class="submit-button container">
-              <input type="submit" value="notify me" class="notify-btn" data-action='submit'>
-            </fieldset>
-          </form> 
+          <a href="#" class="myButton mobileButton">Online Classes</a>
         </div>
       </div>
       <div class='column align align-center'>
         <div class='content-column tab-img-left'>
-         <img src="assets/test-ocean.jpg" alt="first-yoga" class="fullwidth image-bg" /> 
+          <img src="https://nelisam.github.io/portfolio-nelisa/images/second.jpg" alt="" class="fullwidth" />
+          <img src="https://nelisam.github.io/portfolio-nelisa/images/third.jpg" alt="" class="fullwidth" />
         </div>
       </div>
     </div>
+    
   </div>
   <div class="container rule">
     <span></span>
   </div>
 </section>
 <!--------------------------------------------------------------------------------end about------------------------------------------------------------------------------>
-
 <!--------------------------------------------------------------------------------start listen--------------------------------------------------------------------------->
 
 
@@ -1143,23 +960,29 @@ footer ul li a {
     <div class='row reverse'>
       <div class='column column-reverse'>
         <div class='content-column tab-img-right'>
-          <!-- <img src="assets/tiny-podcast-option2.png" alt="Maps on goodleaf podcast" class="fullwidth image-bg" /> -->
-           <img src="assets/test-podcast.png" alt="Maps on goodleaf podcast" class="fullwidth image-bg" /> 
-          <a href="#" class="mobileButton show-on-mobile swap-btn">Button</a>
+          <img src="https://nelisam.github.io/portfolio-nelisa/images/fourth.jpg" alt="" class="fullwidth" />
+          <a href="#" class="mobileButton show-on-mobile swap-btn">Join community</a>
         </div>
       </div>
       <div class='column column-reverse'>
         <div class='content-column align-center mobile-padding'>
-          <h2>Listen Up.</br> The goodleaf Podcast</h2>
-            <p>
-              
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a volutpat ligula. Morbi et ligula sed quam congue fermentum vitae et orci. Aenean suscipit lacinia urna et convallis. Sed sit amet erat vitae nunc posuere iaculis in ut augue. Suspendisse blandit diam nec velit scelerisque sollicitudin. Maecenas semper porta lectus, fermentum dictum metus venenatis eget. Praesent iaculis, felis pretium egestas tristique, massa enim lacinia urna, vitae venenatis quam magna ac nibh. Suspendisse quis bibendum tortor. Vestibulum imperdiet mauris lacus, in semper mi tristique eu. Nam quis euismod mi. 
-            </p>
-            <p>
-              Fusce quam augue, commodo finibus ligula sit amet, porta sollicitudin lectus. Aliquam posuere risus nibh, quis facilisis risus tincidunt eget. Integer venenatis volutpat est, a viverra orci volutpat sit amet. Pellentesque venenatis ex vel nulla mattis euismod. Aliquam commodo et eros ut vehicula. Aliquam eu ipsum posuere, efficitur eros sed, euismod eros. Sed et auctor risus. Ut sollicitudin purus risus. Vestibulum rutrum semper dolor sed iaculis. Etiam ut tempor justo, eu ornare turpis.
-            </p>
-            <a href="#" class="myButton hide-on-mobile" target="_blank" rel="noopener">Button</a>
+          <h2>Join our community</h2>
+          <p>
+            You’ve probably heard of Maps Maponyane, and if you haven’t 
+            you’ll soon find out why our podcast host is a passionate CBD 
+            advocate and all-round great guy. In our weekly episodes, Maps 
+            will be chatting to leading thinkers, culture changers and industry 
+            experts to break the stigma around cannabis, and will explore how 
+            they’re unlocking the power and potential of the plant in their 
+            everyday lives. First up – Tony Budden and Warren Schewitz – founding
+            partners of Canna Tech Global, the world’s leading cannabis event. 
+          </p>
+          <p>
+            Expect honest conversations about success, failure, anxiety, 
+            coping mechanisms and self-care rituals. From the marvelous 
+            to the messy – it’s an unfiltered look at how it feels to be human.
+          </p>
+            <a href="#" class="myButton hide-on-mobile">Join community</a>
         </div>
       </div>
       </div>
@@ -1170,76 +993,145 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a volutpat ligula. M
   </div>
 </section>
 
-<!--------------------------------------------------------------------------------end listen----------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------start shop----------------------------------------------------------------------------->
-<section class="shop" id="Shop">
-  <div class="container align-center">
-    <h2>Shop</h2>
-    <p class="heading-short-description">
-     
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a volutpat ligula. Morbi et ligula sed quam congue fermentum vitae et orci. Aenean suscipit lacinia urna et convallis. Sed sit amet erat vitae nunc posuere iaculis in ut augue. Suspendisse blandit diam nec velit scelerisque sollicitudin. Maecenas semper porta lectus, fermentum dictum metus venenatis eget. Praesent iaculis, felis pretium egestas tristique, massa enim lacinia urna, vitae venenatis quam magna ac nibh. Suspendisse quis bibendum tortor. Vestibulum imperdiet mauris lacus, in semper mi tristique eu. Nam quis euismod mi. 
+<!--------------------------------------------------------------------------------end listen----------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------start read----------------------------------------------------------------------------->
+
+
+<section class="explore">
+  <div class='flex-container'>
+    <div class='explore-content align-center'>
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/fifth-edit.jpg" alt="" class="fullwidth"/>
+      <h3 class="explore-subheading">Serenity Clothing</h3>
+      <p class="slider-short-description">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Maenas
+        luctus tristique ipsum, ut suscipit lorem 
+        bibendum vel. In eget est il
+        scelerisque diam. Fusce sceleris
+        vel magna a vehicula. 
+      </p>
+      <a href="#" class="myButton mobileButton">shop now</a>
+    </div>
+    <div class='explore-content align-center'>
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/sixth.jpg" alt="" class="fullwidth"/>
+      <h3 class="explore-subheading">Serenity Equipment</h3>
+      <p class="slider-short-description">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Maenas
+        luctus tristique ipsum, ut suscipit lorem 
+        bibendum vel. In eget est il
+        scelerisque diam. Fusce sceleris
+        vel magna a vehicula. 
+      </p>
+      <a href="#" class="myButton mobileButton">shop now</a>
+    </div>
+  </div>
+  <div class="container rule">
+    <span></span>
+  </div>
+</div>
+</section>
+
+<!--section class="shop" id="Shop">
+  <div class="container align-center">
+    <h2>Shop goodleaf</h2>
+    <p class="heading-short-description">
+      Wondering where to begin your wellbeing journey? Whether you’re looking to rejuvenate glowing skin, soothe anxiety, 
+      ease localised pain or aid peaceful sleep, our range of wellness essentials have been carefully formulated with your 
+      emotional and physical wellbeing in mind. Head to our online store to get your daily dose of the goodleaf, available 
+      in skincare, drop, drink or vape form.
     </p> 
   </div>
-  <div class='flex-container'>
-    <div class='purchase-content align-center purchase-1'>
-   <!-- <img src="assets/tiny-drops-crop.jpg" alt="oil drops" class="fullwidth"/>   -->
-      <img src="assets/test-oils.jpg" alt="oil drops" class="fullwidth"/> 
-      <h3 class="explore-subheading">Good Life</h3>
-      <p class="slider-short-description">
-        Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Maenas
-        luctus tristique ipsum, ut suscipit lorem 
-        bibendum vel. In eget est il
-        scelerisque diam. Fusce sceleris
-        vel magna a vehicula. 
-      </p>
-      <a href="#" class="myButton hide-on-mobile" target="_blank" rel="noopener nofollow">Button</a>
+  <div class="flex-container">
+    <div class="purchase-content align-center purchase-1">
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/fifth-edit.jpg" alt="oil drops" class="fullwidth"> 
     </div>
-    <div class='purchase-content align-center purchase-2'>
-      <!-- <img src="assets/tiny-cleanser-crop.jpg" alt="face cleanser" class="fullwidth"/> -->
-      <img src="assets/test-face.jpg" alt="face cleanser" class="fullwidth"/>
-      <h3 class="explore-subheading">Good Life</h3>
-      <p class="slider-short-description">
-        Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Maenas
-        luctus tristique ipsum, ut suscipit lorem 
-        bibendum vel. In eget est il
-        scelerisque diam. Fusce sceleris
-        vel magna a vehicula. 
-      </p>
-      <a href="#" class="myButton hide-on-mobile" target="_blank" rel="noopener nofollow">Button</a>
-      <a href="#" class="mobileButton show-on-mobile swap-btn" rel="nofollow">Button</a>
+    <div class="purchase-content align-center purchase-2">
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/sixth.jpg" alt="face cleanser" class="fullwidth">
+      <a href="#" class="mobileButton show-on-mobile swap-btn" rel="nofollow">shop now</a>
     </div>
   </div>
- <div class="container align-center">  
+  <div class="container align-center">
+    <a href="https://goodleaf.co.za/collections/all/?utm_source=the-dose&amp;utm_medium=link&amp;utm_campaign=the-dose-landing" class="myButton hide-on-mobile" target="_blank" rel="noopener nofollow">shop now</a>
+    
   </div>
   <div class="container rule">
     <span></span>
   </div> 
-</section>
-<!--------------------------------------------------------------------------------end shop------------------------------------------------------------------------------->
-
+</section>-->
+<!--------------------------------------------------------------------------------end read------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------start subscription--------------------------------------------------------------------->
 <section id="Subscribe">
+  <div class="container align-center">
+    <h2>Contact Us</h2>
+    <p class="heading-short-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus
+      tristique ipsum, ut suscipit lorem bibendum vel. In eget scelerisque diam. 
+      Fusce scelerisque vel magna a vehicula. Vestibulum suscipit mauris et
+      consequat volutpat. Nullam vel bibendum libero. Proin venenatis felis ipsum, 
+      sed maximus dolor commodo non.
+    </p> 
+  </div>
   <div class='flex-container'>
     <div class='row'>
       <div class='column'>
-        <div class='content-column align-center'>
-          <h2> Lorem ipsum<br>sit amet, consectetur</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a volutpat ligula. Morbi et ligula sed quam congue fermentum vitae et orci. Aenean suscipit lacinia urna et convallis. Sed sit amet erat vitae nunc posuere iaculis in ut augue. Suspendisse blandit diam nec velit scelerisque sollicitudin. Maecenas semper porta lectus, fermentum dictum metus venenatis eget.
-            </p>
-            <p>
-              We’ll also give you a discount of 20% off every order, just because.
-            </p> 
-            <a href="#" class="myButton hide-on-mobile" target="_blank" rel="noopener nofollow">button</a>
+        <div class='content-column'>
+          <p class="contact"><strong>Telephone</strong>: 0710000000</p>
+          <p><strong>Email</strong>: serenityyoga@domain.co.z</p>
+          <p><strong>Address</strong>: 07 Senerity Lane, Cape Town, 8001</p>
+          <div class="social-media">
+            <ul class="nav-list">
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <form action="" >
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name..."
+                required
+              />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email..."
+                required
+              />
+              <label for="comment">Comment</label>
+              <textarea name="comment" id="comment" cols="10" rows="10"></textarea>
+              <input class="myButton" type="submit" value="submit" />
+            </form> 
+          </div>  
         </div>
       </div>
       <div class='column'>
         <div class='content-column tab-img-left'>
-           <img src="assets/test-tote.jpg" alt="tote bag on stool" class="fullwidth" /> 
-          <a href="#" class="mobileButton show-on-mobile swap-btn" target="_blank" rel="noopener nofollow">button</a>
+          <img src="https://nelisam.github.io/portfolio-nelisa/images/map-placeholder.png" alt="" class="fullwidth" />
         </div>
       </div>
       </div>
@@ -1254,13 +1146,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a volutpat ligula. M
 <!--------------------------------------------------------------------------------start footer--------------------------------------------------------------------------->
     <footer>
         <ul class="footer-links">
-            <li><img src="assets/bottom-logo" alt="the footer logo" class="footer-img"></li>
-            <li><a href="#top" class="newanchor">Back to Top</a></li>
-            <li><a href="#" target="_blank" rel="noopener nofollow">Terms of Use</a></li>
-            <li><a href="#" target="_blank" rel="noopener nofollow">Copyright</a></li>
+            <li><img src="https://nelisam.github.io/portfolio-nelisa/images/footer-posture-logo.png" alt="" class="footer-img"></li>
+            <li><a href="#top">Back to Top</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Copyright</a></li>
         </ul>   
     </footer>
-    
 <!--------------------------------------------------------------------------------end footer----------------------------------------------------------------------------->
-
-<router-outlet></router-outlet>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->       
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </body>
+</html>
