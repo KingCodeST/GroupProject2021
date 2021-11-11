@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Posture Perfect</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#db4938">
+        <!--add to view point for certain iphones-->
+        <!--, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0"-->
+        <link rel="stylesheet" href="concern-styles.css">  
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous"
+      /> 
+      <style>
+        /* 1. Global overrides */
+/* -- 1a. Fonts */
+/* -- 1b. Text settings */
+/* -- 1c. Containers */
+/* -- 1d. Flexbox */
+/* -- 1e. Nav bar */
+/* -- 1f. Buttons, CTA interactive elements */
+/* -- 1g. Slides */
+/* -- 1h .Form */
+
+/* 2. Homepage overrides */
+/* -- 2a. header */
+/* -- 2b. landing */
+/* -- 2c. about */
+/* -- 2d. editor */
+/* -- 2e. read */
+/* -- 2f. listen */
+/* -- 2g. shop */
+/* -- 2h. footer */
+/* -- 2i. Tablet */
+/* -- 2j. Mobile */
+
+/* -- 1a. Fonts */
+/* start fonts */
+
+/* end fonts */
+
+
+/*Social Media*/
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 2rem;
+}
+
+.social-media {
+  margin-top: 5rem;
+}
+
+.social-media i {
+  font-size: 5rem;
+  transition: color 650ms;
+  color: #a2d3de;
+}
+
+.fa-linkedin:hover {
+  color: #0072b1;
+}
+.fa-twitter-square:hover {
+  color: #38a1f3;
+}
+.fa-instagram:hover {
+  color: #fbad50;
+}
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+/*End Social Media*/
+/*Start Contact*/
+form label {
+  font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 5px;
+}
+
+
+/*End contact*/
+/*End Contact*/
+/* show & hide hero image for different queries */
+.hide-on-mobile {
+  display: block;
+}
+.show-on-mobile {
+  display: none;
+}
+
+/* -- 1b. Text settings */
+/*start text global*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 60px 0 0;
+}
+section.landing {
+  margin-top: 100px;
+}
+
+body {
+  font-family: "Recoleta-Medium", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Recoleta-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+}
+h2 {
+  font-size: 4.375em;
+  margin-bottom: 60px;
+  color: #538c83;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.heading-short-description {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  font-size: 1.5em;
+}
+
+/*end text global*/
+
+/* -- 1c. Containers */
+/* Container helper styles */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+.fullwidth {
+  width: 100%;
+}
+.align-center {
+  text-align: center;
+}
+
+/* Rule a line after section*/
+/*section .container::after {
+content: " ";
+position: absolute;
+left: 0;
+bottom: -60px;
+width: 100%;
+height: 1px;
+background: #000;
+} */
+.container.rule {
+  margin-top: 60px;
+}
+.container.rule span {
+  width: 100%;
+  height: 1px;
+  background-color: #975536;
+  display: block;
+}
+
+/* -- 1d. Flexbox */
+/* start of flexbox */
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  /* flex-wrap: wrap; --tablet design*/
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 80px;
+}
+
+/*.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}*/
+
+.column {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+}
+
+.column .content-column p {
+  margin-bottom: 60px;
+  font-size: 1.5em;
+  color:#975536;
+}
+.column .content-column:first-of-type {
+  padding-right: 40px;
+}
+.column .content-column:last-of-type {
+  padding-left: 40px;
+}
+/* end of flexbox */
+
+/* -- 1e. Nav bar */
+/* start nav bar */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 999;
+  padding: 55px 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  background-color: white;
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #538c83;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.25em;
+  font-family: "Recoleta-Medium", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+/* end nav bar */
+
+.the-dose-logo {
+  max-width: 885px;
+}
+
+/* -- 1f. Buttons, CTA interactive elements */
+/*  global button */
+.myButton {
+  background-color: #a2d3de;
+  /* border-radius: 35px; */
+  border: 1px solid #a2d3de;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 25px;
+  padding: 18px;
+  min-width: 320px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #a2d3de;
+  text-transform: capitalize;
+  /* font-family: "Recoleta-Medium", sans-serif; */
+  transition: 0.3s;
+}
+
+.myButton:hover {
+  background-color: #ffffff;
+  color: #975536;
+}
+.myButton:focus {
+  outline: none;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+/* end global button */
+
+/* -- 1g. Slides */
+/*start of slides*/
+.slider-item h3 {
+  font-size: 40px;
+  font-family: "Recoleta-Medium", sans-serif;
+  color: #975536;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.subheading {
+  font-family: "Trade Gothic", sans-serif;
+  font-size: 16px;
+  color: #975536;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.slider-short-description {
+  padding: 20px;
+  font-size: 1.5em;
+  color: #975536;
+}
+
+/*end of slides*/
+
+
+
+/*start of next buttons for carousel*/
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: -20%;
+  height: 100%;
+  right: 0;
+}
+
+.owl-prev {
+  left: 7px;
+}
+
+.owl-next {
+  right: -100px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+  margin-left: -60px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  background: white !important;
+}
+
+/*end of next buttons for carousel*/
+
+/* -- 1h .Form */
+/* start form */
+form fieldset {
+  border: none;
+}
+form .form-input {
+  margin-bottom: 60px;
+}
+form .form-input input {
+  height: 60px;
+  width: calc(45% - 0px);
+  border: none;
+  border-bottom: 1px solid #0a281e;
+  position: relative;
+  font-size: 25px;
+}
+form .form-input input:focus {
+  outline: none;
+}
+form .form-input input[type="text"] {
+  float: left;
+}
+form .form-input input[type="email"] {
+  float: right;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #975536;
+  font-family: "Recoleta-Medium", sans-serif;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Recoleta-Medium", sans-serif;
+  color: #975536;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: "Recoleta-Medium", sans-serif;
+  color: #975536;
+}
+
+/* end form */
+
+/* -- 2b. ` */
+/* start landing page */
+
+.landing p {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -12px;
+  color: #975536;
+}
+
+.podcast-available {
+  margin-bottom: 20px;
+}
+
+.landing .goodleaf-logo-img {
+  margin: 30px 0 60px 0;
+  width: 450px;
+}
+.landing .hero {
+  margin-top: 70px;
+}
+
+.podcast-available span {
+  text-transform: uppercase;
+  font-family: "Trade Gothic", sans-serif;
+  letter-spacing: 4px;
+}
+/* end landing page  */
+
+/* -- 2c. explore */
+/* start explore page */
+.explore-subheading{
+  font-size: 40px;
+  color: #538c83;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.explore-content {
+  margin: 80px 40px 60px;
+}
+/* end explore page  */
+
+/* -- 2g. shop */
+/* start shop page */
+.purchase-content {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+}
+
+.purchase-1 {
+margin-left: 120px;
+}
+.purchase-2 {
+margin-right: 120px; 
+}
+/* end shop page  */
+
+/* -- 2h. footer */
+/* start footer */
+
+footer ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 80px 0px 200px 0px;
+}
+
+footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Trade Gothic", sans-serif;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer ul li .footer-img {
+  padding: 60px;
+}
+
+/* end footer */
+
+/* Mobile Responsive */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  /* -- 2a. header */
+  /* show & hide hero image for different queries */
+  .hide-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block;
+  }
+/* -- 1e. Nav bar */
+/* start nav bar */
+  nav ul li {
+    margin-right: 25px;
+  }
+  .sticky {
+    padding: 25px 0;
+  }
+
+  .no-padding-sticky{
+    padding: 0px;
+  }
+
+  .navbar-fixed-bottom {
+    bottom: 0;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: white;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  header ul li {
+    margin: 0 10px;
+  }
+/* end nav bar */
+
+
+/* -- 2b. landing */
+  section.landing {
+    margin-top: 35px;
+  }
+
+  .landing p {
+    margin-top: 30px;
+    font-size: 0.6em;
+    padding: 0px 30px;
+  }
+
+  .landing .goodleaf-logo-img {
+    margin: 18px 0 20px 0;
+    width: 80px;
+  }
+
+  .landing .hero {
+    margin-top: 15px;
+  }
+
+  .the-dose-logo {
+    max-width: 300px;
+  }
+
+  /* -- start global */  
+  body {
+    padding: 0px 18px;
+  }
+
+  section {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 40px 0 0;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #538c83;
+  }
+
+  .swap-btn {
+    margin-top: 35px;
+  }
+
+  .row {
+    display: block;
+    padding: 0;
+    flex-direction: unset;
+    flex-wrap: unset;
+  }
+  .column {
+    display: block;
+    flex-direction: unset;
+    flex-basis: unset;
+    flex: unset;
+  }
+
+  .column .content-column:last-of-type {
+    padding: 0;
+  }
+
+  .column .content-column p {
+    margin-bottom: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 1em;
+  }
+
+  .column .content-column:first-of-type {
+    padding: 0px 18px;
+  }
+
+  .container.rule {
+    margin-top: 30px;
+  }
+
+  .heading-short-description {
+    margin-bottom: 35px;
+    font-size: 1em;
+    padding: 0 18px;
+    color: #975536;
+  }
+
+  .slider-container {
+    /*margin: 0 15px; */
+    margin: 0 -18px 0px 15px;
+  }
+
+  .slider-item h3 {
+    font-size: 2em;
+  }
+
+  .subheading {
+    font-weight: 600;
+    font-size: 0.75em;
+  }
+
+  .slider-short-description {
+    font-size: 1em;
+  }
+
+  /* -- end global */  
+
+
+  /*  global button */
+  .mobileButton {
+    background-color: #a2d3de;
+    border-radius: 35px;
+    border: 1px solid #a2d3de;
+    /*display:inline-block;*/
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 25px;
+    padding: 16px;
+    min-width: 280px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    text-transform: capitalize;
+    font-family: "Recoleta-Medium", sans-serif;
+    transition: 0.3s;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .mobile:hover {
+    background-color: #ffffff;
+    color: #975536;
+  }
+  .mobile:focus {
+    outline: none;
+  }
+  .mobile:active {
+    position: relative;
+    top: 1px;
+  }
+  /* end global button */
+
+ 
+
+  /* -- 2c. about */
+  /* start about */
+  form .form-input {
+    margin-bottom: 35px;
+  }
+
+  form .form-input input[type="text"] {
+    clear: both;
+  }
+  form .form-input input[type="email"] {
+    clear: both;
+  }
+
+  form .form-input input {
+    width: calc(100% - 0px);
+    font-size: 1em;
+  }
+  /* end about */
+
+  /* -- 2f. listen */
+  /* start lsiten */
+  .column-reverse {
+    transform: scaleY(-1);
+  }
+
+  .reverse {
+    transform: scaleY(-1);
+  }
+
+  .podcast-available {
+    margin: 0px 20px 15px !important;
+  }
+
+  .platforms li {
+    font-size: 1em;
+  }
+
+  .podcast-available span {
+    font-weight: 600;
+    font-size: 0.75em;
+  }
+  /* end listen */
+
+  /* -- 2g. shop */
+  /* start shop */
+  .purchase-content {
+    margin: 0px 18px 35px;
+  }
+
+  .shop .flex-container {
+    flex-direction: column;
+  }
+
+  .explore .flex-container {
+    flex-direction: column;
+  }
+
+  .explore-content {
+    margin: 0px 18px 35px;
+}
+
+.explore-subheading {
+  font-size: 2em;
+}
+ /* end footer */
+
+  /* -- 2h. footer */
+  /* start footer */
+  footer ul li .footer-img {
+    padding: 35px 55px 20px 55px;
+    width: 300px;
+  }
+
+  footer ul li a {
+    font-size: 0.75em;
+    color: #975536;
+  }
+}
+/* end footer */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* start nav */
+  nav ul li {
+    margin: 0 28px;
+  }
+
+  nav a {
+    font-size: 1.375em;
+  }
+  /* end nav */
+
+  /* start landing */
+  .the-dose-logo {
+    max-width: 590px;
+  }
+
+  .landing p {
+    margin-top: 50px;
+    font-size: 0.75em;
+  }
+
+  .landing .goodleaf-logo-img {
+    margin: 28px 0 20px 0;
+  }
+
+  .landing .hero {
+    margin-top: 30px;
+  }
+  /* end landing */
+
+  /* start global */
+  body {
+    padding: 0px 70px;
+  }
+
+  h2 {
+    font-size: 1.875em;
+  }
+
+  .column .content-column p {
+    margin-bottom: 45px;
+    font-size: 0.75em;
+  }
+
+  form .form-input input {
+    font-size: 0.875em;
+  }
+
+  .myButton {
+    font-size: 24px;
+    padding: 16px;
+    min-width: 310px;
+  }
+
+  .heading-short-description {
+    max-width: 500px;
+    font-size: 0.75em;
+  }
+
+  .slider-container {
+    margin: 0px -70px;
+  }
+
+  .slider-item h3 {
+    font-size: 1.25em;
+    padding-bottom: 10px;
+  }
+
+  .slider-short-description {
+    padding: 10px;
+    font-size: 0.75em;
+  }
+
+  .subheading {
+    font-size: 0.5em;
+    font-weight: 600;
+  }
+
+  .column .content-column:last-of-type {
+    padding-left: 0px;
+  }
+  /* end global */
+
+  /* start shop */
+  .purchase-content {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .purchase-1 {
+    margin-left: 80px;
+    }
+    .purchase-2 {
+    margin-right: 80px; 
+    }
+  /* end shop */
+}
+
+      </style> 
+  </head>
+<body>
+<!--------------------------------------------------------------------------------start nav bar-------------------------------------------------------------------------->
+<header class="sticky" id="no-padding-sticky">
+  <div class="container align-center">
+    <nav class="nav-bar" id="nav_bar">
+      <ul class="nav-links">
+        <li><a href="#Read">In-Person</a></li>
+        <li><a href="#Listen">Online</a></li>
+        <li><a href="#Shop">Community</a></li>
+        <li><a href="#Subscribe">Clothing</a></li>
+        <li><a href="#Listen">Equipment</a></li>
+        <li><a href="#Shop">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--------------------------------------------------------------------------------end nav bar---------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------start landing-------------------------------------------------------------------------->
+
+<section class="landing"  id="top">
+  <div class="container align-center">
+    <img src="https://nelisam.github.io/portfolio-nelisa/images/posture-perfect-logo.png" alt=""  class="goodleaf-logo-img fullwidth" />
+    <p class="landing-text align-center">
+        your self care station - for when you need serenity and<br class="hide-on-mobile"/> 
+        peace - an exploration<br class="hide-on-mobile"/> 
+        into selfcare - care and the moments<br class="hide-on-mobile"/> 
+        that make us human<br class="hide-on-mobile"/>  
+    </p>
+    <img src="https://nelisam.github.io/portfolio-nelisa/images/first-scaled.jpg" alt="" class="hero hide-on-mobile fullwidth" />
+    <img src="../assets/landing-mobile.png" alt="" class="hero show-on-mobile fullwidth" />
+  </div>
+  <div class="container rule">
+    <span></span>
+  </div>
+</section>
+
+
+<!--------------------------------------------------------------------------------end landing---------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------start about---------------------------------------------------------------------------->
+<section id="Read">
+  <div class='flex-container'>
+    <div class='row wrap-row'>
+      <div class='column align-center'>
+        <div class='content-column'>
+          <h2>Join our  </br>Serenity Classes</h2>
+          <p>
+            We’re a head-clearing swim before the world has awoken or a call from a friend on a lonely afternoon. 
+            We’re not just a blog but a trusted companion, on hand to make life’s in-between moments a little 
+            more meaningful. We’re about to kickstart the next leg of our journey and we’d love for you to join 
+            us when we’re live. Get the good news first by signing up to notifications below. 
+          </p>
+          <a href="#" class="myButton mobileButton">In Person Classes</a><br/><br/>
+          <p>
+            We’re a head-clearing swim before the world has awoken or a call from a friend on a lonely afternoon. 
+            We’re not just a blog but a trusted companion, on hand to make life’s in-between moments a little 
+            more meaningful. We’re about to kickstart the next leg of our journey and we’d love for you to join 
+            us when we’re live. Get the good news first by signing up to notifications below. 
+          </p>
+          <a href="#" class="myButton mobileButton">Online Classes</a>
+        </div>
+      </div>
+      <div class='column align align-center'>
+        <div class='content-column tab-img-left'>
+          <img src="https://nelisam.github.io/portfolio-nelisa/images/second.jpg" alt="" class="fullwidth" />
+          <img src="https://nelisam.github.io/portfolio-nelisa/images/third.jpg" alt="" class="fullwidth" />
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="container rule">
+    <span></span>
+  </div>
+</section>
+<!--------------------------------------------------------------------------------end about------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------start listen--------------------------------------------------------------------------->
+
+
+<section id="Listen">
+  <div class='flex-container'>
+    <div class='row reverse'>
+      <div class='column column-reverse'>
+        <div class='content-column tab-img-right'>
+          <img src="https://nelisam.github.io/portfolio-nelisa/images/fourth.jpg" alt="" class="fullwidth" />
+          <a href="#" class="mobileButton show-on-mobile swap-btn">Join community</a>
+        </div>
+      </div>
+      <div class='column column-reverse'>
+        <div class='content-column align-center mobile-padding'>
+          <h2>Join our community</h2>
+          <p>
+            You’ve probably heard of Maps Maponyane, and if you haven’t 
+            you’ll soon find out why our podcast host is a passionate CBD 
+            advocate and all-round great guy. In our weekly episodes, Maps 
+            will be chatting to leading thinkers, culture changers and industry 
+            experts to break the stigma around cannabis, and will explore how 
+            they’re unlocking the power and potential of the plant in their 
+            everyday lives. First up – Tony Budden and Warren Schewitz – founding
+            partners of Canna Tech Global, the world’s leading cannabis event. 
+          </p>
+          <p>
+            Expect honest conversations about success, failure, anxiety, 
+            coping mechanisms and self-care rituals. From the marvelous 
+            to the messy – it’s an unfiltered look at how it feels to be human.
+          </p>
+            <a href="#" class="myButton hide-on-mobile">Join community</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container rule">
+    <span></span>
+  </div>
+</section>
+
+
+<!--------------------------------------------------------------------------------end listen----------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------start read----------------------------------------------------------------------------->
+
+
+<section class="explore">
+  <div class='flex-container'>
+    <div class='explore-content align-center'>
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/fifth-edit.jpg" alt="" class="fullwidth"/>
+      <h3 class="explore-subheading">Serenity Clothing</h3>
+      <p class="slider-short-description">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Maenas
+        luctus tristique ipsum, ut suscipit lorem 
+        bibendum vel. In eget est il
+        scelerisque diam. Fusce sceleris
+        vel magna a vehicula. 
+      </p>
+      <a href="#" class="myButton mobileButton">shop now</a>
+    </div>
+    <div class='explore-content align-center'>
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/sixth.jpg" alt="" class="fullwidth"/>
+      <h3 class="explore-subheading">Serenity Equipment</h3>
+      <p class="slider-short-description">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Maenas
+        luctus tristique ipsum, ut suscipit lorem 
+        bibendum vel. In eget est il
+        scelerisque diam. Fusce sceleris
+        vel magna a vehicula. 
+      </p>
+      <a href="#" class="myButton mobileButton">shop now</a>
+    </div>
+  </div>
+  <div class="container rule">
+    <span></span>
+  </div>
+</div>
+</section>
+
+<!--section class="shop" id="Shop">
+  <div class="container align-center">
+    <h2>Shop goodleaf</h2>
+    <p class="heading-short-description">
+      Wondering where to begin your wellbeing journey? Whether you’re looking to rejuvenate glowing skin, soothe anxiety, 
+      ease localised pain or aid peaceful sleep, our range of wellness essentials have been carefully formulated with your 
+      emotional and physical wellbeing in mind. Head to our online store to get your daily dose of the goodleaf, available 
+      in skincare, drop, drink or vape form.
+    </p> 
+  </div>
+  <div class="flex-container">
+    <div class="purchase-content align-center purchase-1">
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/fifth-edit.jpg" alt="oil drops" class="fullwidth"> 
+    </div>
+    <div class="purchase-content align-center purchase-2">
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/sixth.jpg" alt="face cleanser" class="fullwidth">
+      <a href="#" class="mobileButton show-on-mobile swap-btn" rel="nofollow">shop now</a>
+    </div>
+  </div>
+  <div class="container align-center">
+    <a href="https://goodleaf.co.za/collections/all/?utm_source=the-dose&amp;utm_medium=link&amp;utm_campaign=the-dose-landing" class="myButton hide-on-mobile" target="_blank" rel="noopener nofollow">shop now</a>
+    
+  </div>
+  <div class="container rule">
+    <span></span>
+  </div> 
+</section>-->
+<!--------------------------------------------------------------------------------end read------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------start subscription--------------------------------------------------------------------->
+<section id="Subscribe">
+  <div class="container align-center">
+    <h2>Contact Us</h2>
+    <p class="heading-short-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus
+      tristique ipsum, ut suscipit lorem bibendum vel. In eget scelerisque diam. 
+      Fusce scelerisque vel magna a vehicula. Vestibulum suscipit mauris et
+      consequat volutpat. Nullam vel bibendum libero. Proin venenatis felis ipsum, 
+      sed maximus dolor commodo non.
+    </p> 
+  </div>
+  <div class='flex-container'>
+    <div class='row'>
+      <div class='column'>
+        <div class='content-column'>
+          <p class="contact"><strong>Telephone</strong>: 0710000000</p>
+          <p><strong>Email</strong>: serenityyoga@domain.co.z</p>
+          <p><strong>Address</strong>: 07 Senerity Lane, Cape Town, 8001</p>
+          <div class="social-media">
+            <ul class="nav-list">
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <form action="" >
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name..."
+                required
+              />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email..."
+                required
+              />
+              <label for="comment">Comment</label>
+              <textarea name="comment" id="comment" cols="10" rows="10"></textarea>
+              <input class="myButton" type="submit" value="submit" />
+            </form> 
+          </div>  
+        </div>
+      </div>
+      <div class='column'>
+        <div class='content-column tab-img-left'>
+          <img src="https://nelisam.github.io/portfolio-nelisa/images/map-placeholder.png" alt="" class="fullwidth" />
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container rule">
+    <span></span>
+  </div>
+</section>
+<!--------------------------------------------------------------------------------end subscription----------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------start footer--------------------------------------------------------------------------->
+    <footer>
+        <ul class="footer-links">
+            <li><img src="https://nelisam.github.io/portfolio-nelisa/images/footer-posture-logo.png" alt="" class="footer-img"></li>
+            <li><a href="#top">Back to Top</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Copyright</a></li>
+        </ul>   
+    </footer>
+<!--------------------------------------------------------------------------------end footer----------------------------------------------------------------------------->
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->       
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </body>
+</html>
