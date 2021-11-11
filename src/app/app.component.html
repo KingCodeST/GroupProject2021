@@ -1105,7 +1105,7 @@ footer ul li .footer-img {
             </ul>
           </div>
           <div>
-            <form action="https://formsubmit.co/jarav97238@gyn5.com" method="POST" >
+            <form name="form1" action="https://formsubmit.co/jarav97238@gyn5.com" method="POST" >
               <input type="hidden" name="_subject" value="Tester Submission">
               <label for="name">Name:</label>
               <input
@@ -1115,6 +1115,7 @@ footer ul li .footer-img {
                 placeholder="Enter your name..."
                 required
               />
+              <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next" value="https://media-technology.luqmaanessa.co.za/emailresponse.html">
               <label for="email">Email:</label>
               <input
@@ -1126,7 +1127,7 @@ footer ul li .footer-img {
               />
               <label for="comment">Comment</label>
               <textarea name="comment" id="comment" cols="10" rows="10"></textarea>
-              <input class="myButton" type="submit" value="submit" />
+              <input class="myButton" type="submit" value="submit" onclick="submit_form" />
             </form> 
           </div>  
         </div>
@@ -1158,6 +1159,13 @@ footer ul li .footer-img {
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->       
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js">
+
+function submit_form() {
+  document.formu1.submit();
+  document.formu1.reset(); 
+  }
+
+</script>
     </body>
 </html>
