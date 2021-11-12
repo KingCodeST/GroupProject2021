@@ -13,7 +13,7 @@
         <meta name="theme-color" content="#db4938">
         <!--add to view point for certain iphones-->
         <!--, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0"-->
-        <link rel="stylesheet" href="concern-styles.css">  
+        <!-- <link rel="stylesheet" href="concern-styles.css">   -->
         <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -921,7 +921,7 @@ footer ul li .footer-img {
     <div class='row wrap-row'>
       <div class='column align-center'>
         <div class='content-column'>
-          <h2>Join our  </br>Serenity Classes</h2>
+          <h2>Join our  Serenity Classes</h2>
           <p>
             We’re a head-clearing swim before the world has awoken or a call from a friend on a lonely afternoon. 
             We’re not just a blog but a trusted companion, on hand to make life’s in-between moments a little 
@@ -987,7 +987,7 @@ footer ul li .footer-img {
       </div>
       </div>
     </div>
-  </div>
+  
   <div class="container rule">
     <span></span>
   </div>
@@ -1001,7 +1001,7 @@ footer ul li .footer-img {
 <section class="explore">
   <div class='flex-container'>
     <div class='explore-content align-center'>
-      <img src="https://nelisam.github.io/portfolio-nelisa/images/fifth-edit.jpg" alt="" class="fullwidth"/>
+      <img src="https://nelisam.github.io/portfolio-nelisa/images/fifth.jpg" alt="" class="fullwidth"/>
       <h3 class="explore-subheading">Serenity Clothing</h3>
       <p class="slider-short-description">
         Lorem ipsum dolor sit amet,
@@ -1030,7 +1030,7 @@ footer ul li .footer-img {
   <div class="container rule">
     <span></span>
   </div>
-</div>
+
 </section>
 
 <!--section class="shop" id="Shop">
@@ -1105,7 +1105,8 @@ footer ul li .footer-img {
             </ul>
           </div>
           <div>
-            <form action="" >
+            <form name="form1" action="https://formsubmit.co/jarav97238@gyn5.com" method="POST" >
+              <input type="hidden" name="_subject" value="Tester Submission">
               <label for="name">Name:</label>
               <input
                 type="text"
@@ -1113,7 +1114,9 @@ footer ul li .footer-img {
                 name="name"
                 placeholder="Enter your name..."
                 required
-              />
+              >
+              <input type="hidden" name="_captcha" value="false">
+             
               <label for="email">Email:</label>
               <input
                 type="email"
@@ -1121,10 +1124,10 @@ footer ul li .footer-img {
                 name="email"
                 placeholder="Enter your email..."
                 required
-              />
+              >
               <label for="comment">Comment</label>
               <textarea name="comment" id="comment" cols="10" rows="10"></textarea>
-              <input class="myButton" type="submit" value="submit" />
+              <input class="myButton" type="submit" value="submit" onclick="submit_form" >
             </form> 
           </div>  
         </div>
@@ -1136,7 +1139,7 @@ footer ul li .footer-img {
       </div>
       </div>
     </div>
-  </div>
+
   <div class="container rule">
     <span></span>
   </div>
@@ -1156,6 +1159,13 @@ footer ul li .footer-img {
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->       
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js">
+
+function submit_form() {
+  document.formu1.submit();
+  document.formu1.reset(); 
+  }
+
+</script>
     </body>
 </html>
